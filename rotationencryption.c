@@ -6,11 +6,13 @@ void rotationCipher(char* text, int key);
 
 int main(void) {
     // RANDOM RULES FOR CODE
-    int key = 1;
+    int key;
     char text[101];
     
     printf("Enter the text you want encrypted: ");
     fgets(text, sizeof(text), stdin);
+    printf("Enter your rotation key: ");
+    scanf("%d", &key);
     printf("The encrypted text is: ");
     rotationCipher(text, key);
     return 0;
